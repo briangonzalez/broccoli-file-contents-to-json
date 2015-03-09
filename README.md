@@ -4,6 +4,8 @@
 
 Read in some files, output a JSON representation of their contents.
 
+Check out the gulp equivalent [here](https://github.com/briangonzalez/gulp-file-contents-to-json).
+
 Installation
 ------------
 
