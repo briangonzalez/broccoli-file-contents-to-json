@@ -42,7 +42,7 @@ Now, you can use `output.json` however you'd like.
 How to Use
 ----------
 
-See the `Brocfile` packaged in this project for an example of how to use
+See the `Brocfile` packaged in this project for a usage example.
 
 Author
 ----------
