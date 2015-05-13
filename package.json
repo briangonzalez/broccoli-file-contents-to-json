@@ -1,6 +1,6 @@
 {
   "name": "broccoli-file-contents-to-json",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "Read in some files, output a JSON representation of their contents.",
   "main": "index.js",
   "scripts": {
@@ -22,9 +22,8 @@
   },
   "homepage": "https://github.com/briangonzalez/broccoli-file-contents-to-json",
   "dependencies": {
+    "broccoli": "^0.16.2",
     "broccoli-kitchen-sink-helpers": "^0.2.6",
-    "broccoli-writer": "^0.1.1",
-    "mkdirp": "^0.5.0",
-    "rimraf": "^2.3.1"
+    "broccoli-writer": "^0.1.1"
   }
 }

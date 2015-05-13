@@ -44,7 +44,12 @@ Now, you can use `output.json` however you'd like.
 How to Use
 ----------
 
-See the `Brocfile` packaged in this project for a usage example.
+See the `Brocfile` packaged in this project for example usage.
+
+
+```
+rm -rf dist && broccoli build dist
+```
 
 Author
 ----------

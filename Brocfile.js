@@ -1,10 +1,4 @@
 
-// Cleanup.
-var rmdir = require('rimraf').sync;
-rmdir('./dist', function (e) {
-  console.log('Error deleting dist.');
-});
-
 // In your Brocfile, instead of requiring the index file,
 // require the npm installed package. Eg:
 //

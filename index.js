@@ -1,6 +1,5 @@
 var fs = require('fs');
 var path = require('path');
-var mkdirp = require('mkdirp');
 var Writer = require('broccoli-writer');
 var helpers = require("broccoli-kitchen-sink-helpers");
 
@@ -44,9 +43,10 @@ Fc2JSON.prototype.write = function (readTree, destDir) {
     });
 
     // Make the dir. Write the file.
-    mkdirp(path.join(destDir, path.dirname(self.outputFile)), function () {
-      fs.writeFile(path.join(destDir, self.outputFile), JSON.stringify(output, null, 2));
-    });
+    var outDir = path.join(destDir, path.dirname(self.outputFile));
+    if (!fs.existsSync(outDir)) fs.mkdirSync(outDir);
+
+    fs.writeFileSync(path.join(destDir, self.outputFile), JSON.stringify(output, null, 2));
 
   });
 };
